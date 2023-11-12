@@ -52,8 +52,8 @@ const Calculator = () => {
         <input type="text" readOnly value={firstNumber} className="border p-2 rounded w-1/2 mr-2" />
         <input type="text" readOnly value={secondNumber} className="border p-2 rounded w-1/2" />
       </div>
-      <div className="grid grid-cols-4 gap-2 mb-4">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map((number) => (
+      <div className="grid grid-cols-3 gap-2 mb-4">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((number) => (
           <button key={number} onClick={() => handleNumberClick(number.toString())} className="border p-2 rounded">
             {number}
           </button>
